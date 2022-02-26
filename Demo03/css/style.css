@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Common */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+/* Card elements */
+#card {
+}
+
+.card-title {
+}
+
+.card {
+  position: relative;
+  margin: 15px 15px;
+  width: 33.33333333%;
+  /* box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.18); */
+}
+
+.card:hover .card-boder-l{
+  height: 100%;
+  transition: all .4s linear;
+} 
+.card-boder-l{
+  transition: all .4s linear;
+  background: #54ee89;
+  width: 4px;
+  height: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.card:hover .card-boder-r{
+  height: 100%;
+  transition: all .4s linear;
+} 
+.card-boder-r{
+  transition: all .4s linear;
+  background: #54ee89;
+  width: 4px;
+  height: 0%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card:hover .card-boder-t{
+  width: 100%;
+  transition: all .4s linear;
+} 
+.card-boder-t{
+  transition: all .4s linear;
+  background: #54ee89;
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card:hover .card-boder-b{
+  width: 100%;
+  transition: all .4s linear;
+} 
+
+.card-boder-b{
+  transition: all .4s linear;
+  background: #54ee89;
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.card-icon {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+  color: #54ee89;
+}
+
+.card-icon i {
+  /* border: 2px solid #54ee89;
+  border-radius: 100%; */
+  padding: 30px;
+}
+
+.card-title h2 {
+  text-align: center;
+}
+
+.card-desc {
+  padding: 20px;
+}
+
+.card-desc p {
+  text-align: center;
+}
+
+.card-button {
+  padding: 30px;
+  text-align: center;
+}
+
+.card-button__main {
+  padding: 15px 30px;
+  background: #54ee89;
+  color: #fff;
+  border-radius: 50px;
+}
+.card-button__main{
+  opacity: 1;
+}
+.card-button__main:hover {
+  transition: all .3s linear;
+  opacity: 0.7;
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+  .row {
+    width: 80%;
+    padding: 0;
+    display: block;
+  }
+  .card {
+    width: 100%;
+    margin: 30px;
+  }
+}
